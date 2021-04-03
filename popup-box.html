@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script>
+        var jmlAngkot = 10;
+        var angkotBeroperasi = 6;
+
+        for (var noAngkot = 1; noAngkot <= jmlAngkot; noAngkot++) {
+            if (noAngkot <= 6 && noAngkot !== 5 && noAngkot !== 1) {
+                document.write('<p>Angkot No.' + noAngkot + " " + 'Sedang beroperasi </br>');
+            } else if (noAngkot === 8 || noAngkot === 10 || noAngkot === 5 || noAngkot === 1) {
+                document.write('<p>Angkot No.' + noAngkot + " " + 'sedang lembur </br>');
+            } else {
+                document.write('<p>Angkot No.' + noAngkot + " " + 'Sedang tidak beroperasi </br>');
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <p>Hello world!</p>
+
+</body>
+
+</html>
